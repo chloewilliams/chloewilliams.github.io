@@ -19,7 +19,6 @@
 }
 
 html, body {
-	min-width: 1280px;
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -42,16 +41,17 @@ h1 {
 }
 
 h2 {
-	font-family: 'gotham-300', 'helvetica-neue', helvetica, arial, sans-serif;
+	font-family: 'gotham-200', 'helvetica-neue', helvetica, arial, sans-serif;
 	font-weight: 300;
-	font-size: 48px;
+	font-size: 18px;
+  line-height: 1.6;
 	margin: 0 auto;
 	margin-bottom: 18px;
 	color: #3c3c3c;
 }
 
 p {
-	font-family: 'gotham-300', 'helvetica-neue', helvetica, arial, sans-serif;
+	font-family: 'gotham-200', 'helvetica-neue', helvetica, arial, sans-serif;
 	font-weight: 300;
 	font-size: 18px;
 	line-height: 2;
@@ -59,13 +59,18 @@ p {
 	color: #3c3c3c;
 }
 
-.header-copy p {
-	font-family: 'gotham-300', 'helvetica-neue', helvetica, arial, sans-serif;
+.introduction p {
+	font-family: 'gotham-200', 'helvetica-neue', helvetica, arial, sans-serif;
 	font-weight: 300;
 	font-size: 22px;
 	line-height: 32px;
 	margin: 0 auto;
-	color: #3c3c3c;
+	color: #6c6c6c;
+  margin: 20px 5% 20px 5%;
+}
+
+.introduction p a {
+  font-family: 'gotham-200', 'helvetica-neue', helvetica, arial, sans-serif;
 }
 
 a {
@@ -79,51 +84,41 @@ a:hover {
 	text-decoration: none;
 }
 
-.award-pullout {
-	font-family: 'haptik-500', 'helvetica-neue', helvetica, arial, sans-serif;
-	font-weight: 500;
-	font-size: 12px;
-	color: #9c9c9c;
-}
-
 ul li a {
 	color: #3c3c3c;
 	text-decoration: none;
 }
 
+.brand-logo {
+  width: 120px;
+  height: 120px;
+}
+
 .container {
-	width: 1280px;
+	max-width: 90%;
 	height: 100%;
 	margin: 0 auto;
 	padding: 0;
 }
 
 .row {
-	max-width: 1040px;
+	width: 100%;
 	margin: 0 auto;
-	padding: 0;
-	clear: both !important;
-}
-
-.project-row {
-	max-width: 1040px;
-	min-height: 736px;
-	margin: 0 auto;
-	margin-top: 160px;
 	padding: 0;
 	clear: both !important;
 }
 
 .page-header {
-	width: 1040px;
+	width: 100%;
 	margin: 0 auto;
 	text-align: center;
 }
 
 .navigation {
-	width: 1040px;
-	padding-top: 98px;
-/* 	margin: 0 auto; */
+	width: 100%;
+	padding-top: 60px;
+ 	margin: 0 auto;
+  text-align: center;
 }
 
 .navigation ul {
@@ -132,12 +127,11 @@ ul li a {
 	margin: 0 auto;
 	list-style: none;
 	list-style-type: none;
-/* 	display: inline; */
-	float: right;
+  float: right;
 }
 
 .navigation ul li {
-	float: left;
+  float: left;
 	margin-right: 40px;
 }
 
@@ -145,110 +139,45 @@ ul li a {
 	margin-right: 0px;
 }
 
-.header-copy {
-	margin-top: 130px;
-	width: 1040px;
+.introduction {
+  margin: 0 auto;
+  margin-top: 130px;
+	width: 90%;
 	text-align: center;
 }
 
-.project-image {
-	width: 620px;
-	height: 736px;
-	float: left;
-	background-size: 578px !important;
-	background-repeat: no-repeat;
+.brands {
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+	width: 90%;
+	text-align: center;
 }
 
-#project-01 {
-	background-image: url('../img/peak-iphone-01@2x.png');
-	background-position: left top;
-	float: left;
+.brands ul {
+  height: 120px;
+	padding: 0;
+	margin: 0 auto;
+	list-style: none;
+	list-style-type: none;
 }
 
-#project-02 {
-	background-image: url('../img/peak-android-01@2x.png');
-	background-position: right top;
-	float: right;
+.brands ul li {
+  display: inline;
+  margin-right: 40px;
 }
 
-#project-03 {
-	float: left;
-}
-
-#project-04 {
-	float: right;
-}
-
-.overflow-image-left {
-/* 	height: 732px; */
-/* 	width: 1035px; */
-	margin-left: -460px;
-}
-
-.overflow-image-right {
-/* 	height: 736px; */
-/* 	width: 1267px; */
-	margin-left: 80px;
-}
-
-#project-03-img {
-	height: 736px;
-}
-
-#project-04-img {
-	height: 756px;
-}
-
-#project-05-img {
-	height: 732px;
-}
-
-.project-description {
-	width: 420px;
-	min-height: 720px;
-	float: left;
-	display: table;
-}
-
-.project-description-copy-wrapper {
-	display: table-cell;
-	vertical-align: middle;
-}
-
-.project-description-copy-right {
-	margin-left: 40px;
-	width: 380px;
-}
-
-.project-description-copy-left {
-	margin-right: 20px;
-	width: 400px;
-}
-
-.store-badge {
-	width: 200px !important;
-	margin-top: 44px;
+.brands ul li:last-child {
+	margin-right: 0px;
 }
 
 .footer {
-	width: 1040px;
+	width: 80%;
 	margin: 0 auto;
 	margin-top: 80px;
 	margin-bottom: 80px;
 	text-align: center;
 	clear: both !important;
-}
-
-.footer .navigation ul {
-	height: 32px;
-	width: 560px;
-	padding: 0;
-	margin: 0 auto;
-	list-style: none;
-	list-style-type: none;
-/* 	display: inline; */
-	text-align: center;
-	float: none !important;
 }
 
 .footer p#copyright {
